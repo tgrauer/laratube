@@ -13,6 +13,7 @@ class Model extends BaseModel
      * @var bool
      */
     public $incrementing = false;
+    protected $guarded = [];
 
     /**
      * The "booting" method of the model.

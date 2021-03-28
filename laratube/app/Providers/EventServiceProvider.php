@@ -2,6 +2,7 @@
 
 namespace Laratube\Providers;
 
+use Laratube\Listeners\Users\CreateUserChannel;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -17,6 +18,7 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         Registered::class => [
             SendEmailVerificationNotification::class,
+            CreateUserChannel::class
         ],
     ];
 
