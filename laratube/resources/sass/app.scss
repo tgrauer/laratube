@@ -25,20 +25,22 @@
 	position: relative;
 
 	.channel-avatar-overlay{
-		display: none;
-	}
-
-	&:hover{
-		.channel-avatar-overlay{
-			position:absolute;
+		position:absolute;
 			width: 100%;
 			height: 100%;
-			background-color:rgba(0,0,0,0.4);
+			background-color:rgba(0,0,0,0.125);
 			display:flex;
 			align-items: center;
 			justify-content: center;
 			font-size: 35px;
+			color:#333;
+	}
+
+	&:hover{
+		.channel-avatar-overlay{
+			background-color:rgba(0,0,0,0.4);
 			color:#fff;
+			cursor: pointer;
 		}
 	}
 	
